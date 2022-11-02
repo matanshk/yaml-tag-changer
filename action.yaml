@@ -1,0 +1,22 @@
+name: 'yaml-tag-changer'
+description: 'Change your image tag easily'
+inputs:
+  filename:
+    description: 'filename'
+    required: true    
+  component_name:
+    description: 'component name'
+    required: true
+  tag:
+    description: 'tag'
+    required: true    
+# outputs:
+#   pokemon_name:
+#     description: 'Name des Pokemons'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.component_name}}
+    - ${{ inputs.tag}} 
+    - ${{ inputs.filename }}   
