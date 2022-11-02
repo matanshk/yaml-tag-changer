@@ -13,3 +13,5 @@ jobs:
           filename: values.yaml
           component_name: kubescape
           tag: 2232
+      
+      - run: cat values.yaml
