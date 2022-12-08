@@ -10,8 +10,8 @@ jobs:
       - name: change tag
         uses: ./ # Uses an action in the root directory
         with:
-          filename: test/values.yaml
+          filename: ./test/values.yaml
           component_name: kubescape
           tag: 2232
       
-      - run: cat values.yaml
+      - run: cat ./test/values.yaml
