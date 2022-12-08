@@ -10,9 +10,6 @@ inputs:
   tag:
     description: 'tag'
     required: true    
-# outputs:
-#   pokemon_name:
-#     description: 'Name des Pokemons'
 runs:
   using: 'docker'
   image: 'Dockerfile'
